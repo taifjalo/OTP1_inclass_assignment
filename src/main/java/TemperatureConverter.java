@@ -6,9 +6,8 @@ public class TemperatureConverter {
     }
 
     public double celsiusToFahrenheit(double celcius) {
-        double fahrenheith = (celcius * (9.0 / 5.0)) + 32;
+        double fahrenheith = celcius * (9.0 / 5.0) + 32;
         return fahrenheith;
-
     }
 
     public boolean isExtremeTemperature(double celcius) {

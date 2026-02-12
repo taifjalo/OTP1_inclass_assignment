@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +12,7 @@ class TemperatureConverterTest {
     }
 
     @Test
-    void fahrenheitToCelcius() {
+    void fahrenheitToCelsius() {
         assertEquals(0.0, temperatureConverter.fahrenheitToCelcius(32.0));
         assertEquals(32.0, temperatureConverter.fahrenheitToCelcius(89.6));
         assertEquals(-40.0, temperatureConverter.fahrenheitToCelcius(-40.0));;
@@ -22,9 +21,9 @@ class TemperatureConverterTest {
 
     @Test
     void celsiusToFahrenheit() {
-        assertEquals(10.0, temperatureConverter.fahrenheitToCelcius(50.0));
-        assertEquals(-51.0, temperatureConverter.fahrenheitToCelcius(-59.8));
-        assertEquals(-5.0, temperatureConverter.fahrenheitToCelcius(23.0));
+        assertEquals(122.0, temperatureConverter.celsiusToFahrenheit(50.0));
+        assertEquals(-75.64, temperatureConverter.celsiusToFahrenheit(-59.8));
+        assertEquals(32.0, temperatureConverter.celsiusToFahrenheit(0));
 
 
     }
